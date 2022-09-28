@@ -48,7 +48,7 @@ prev.correct.strata <- function(tildeN, N_T, alpha_0, alpha_1,
   barp_T_1_star <- barp_T_1_0 + barp_T_1_1
   
   if (sum(tildeN[1,]) == sum(N_T[1,])) {
-    hatp_1 <- barp_T_1_star/2 * (sum(N_T)/sum(tildeN))
+    hatp_1 <- barp_T_1_star * (sum(N_T)/sum(tildeN))
   }else{
     hatp_1 <- barp_T_1_star/2 * (sum(N_T)/sum(tildeN) + 1)
   }
